@@ -21,9 +21,9 @@
     android:hint="@string/edit_message"></EditText>
 
     <Button
+        android:id="@+id/content_my_botton"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="按钮"
-        android:onClick="SendMessage"/>
+        android:text="按钮" />
 </LinearLayout>

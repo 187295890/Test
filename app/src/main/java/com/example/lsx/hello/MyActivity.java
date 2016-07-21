@@ -4,10 +4,13 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ButtonBarLayout;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -26,6 +29,14 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Button button= (Button) findViewById(R.id.content_my_botton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("我是王晓兰","第一次作业");
+            }
+        });
+
     }
 
     @Override
@@ -49,9 +60,5 @@ public class MyActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void SendMessage(View view)
-    {
-       int a=8;
-        int b=a;
-    }
+
 }
